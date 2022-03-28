@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 import theme from '../styles/theme-styles';
 
+import '../assets/fonts/Poppins/stylesheet.css';
+
 const GlobalStyles = createGlobalStyle`
   *,
   p, a,
@@ -14,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 62.5%;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     background-color: ${theme.colors.pink};
   }
 
