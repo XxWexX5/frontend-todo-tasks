@@ -3,6 +3,15 @@ import { createGlobalStyle } from 'styled-components';
 import theme from '../styles/theme-styles';
 
 const GlobalStyles = createGlobalStyle`
+  *,
+  p, a,
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: ${theme.colors.gray};
+  }
+
   body {
     font-size: 62.5%;
     background-color: ${theme.colors.pink};
