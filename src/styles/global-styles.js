@@ -22,6 +22,18 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .container-image {
+    width: 100%;
+    height: auto;
+
+    .image,
+    img,
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
 
 export default GlobalStyles;
