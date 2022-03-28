@@ -1,8 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
+import theme from '../styles/theme-styles';
+
 const GlobalStyles = createGlobalStyle`
   body {
-    background-color: #00F;
+    font-size: 62.5%;
+    background-color: ${theme.colors.pink};
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 `;
 
