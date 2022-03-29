@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     list-style: none;
     color: ${theme.colors.gray};
+    box-sizing: border-box;
   }
 
   body {
@@ -35,6 +36,7 @@ const GlobalStyles = createGlobalStyle`
     svg {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
 `;

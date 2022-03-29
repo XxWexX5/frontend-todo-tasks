@@ -4,6 +4,7 @@ import { gql, useQuery, useMutation } from '@apollo/client';
 import * as styled from './styles.js';
 
 import Header from '../../components/Header';
+import Task from '../../components/Task';
 
 export const GET_PAGE = gql`
   query GET_PAGE {
@@ -70,6 +71,11 @@ function Home() {
       <styled.App>
         <div className="container">
           <Header header={dataPage.header} />
+
+          <Task
+            imageFavorite={dataPage.image_task_favorite.data.attributes}
+            imageDelete={dataPage.image_task_delete.data.attributes}
+          />
         </div>
       </styled.App>
     </div>

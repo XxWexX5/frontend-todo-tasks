@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const ContainerHeader = styled.header`
   display: flex;
+  margin-bottom: 3.5em;
 
   .container-image {
     max-width: 4.35em;
+    margin-left: -0.55em;
   }
 
   .title {

@@ -3,14 +3,12 @@ import React from 'react';
 import ContainerHeader from './styles.js';
 
 const Header = (props) => {
-  console.log(props.header);
-
   return (
     <ContainerHeader>
       <div className="container-image">
         <img
           src={'http://localhost:1337' + props.header.image.data.attributes.url}
-          alt=""
+          alt={props.header.image.data.attributes.alt}
           className=""
         />
       </div>
