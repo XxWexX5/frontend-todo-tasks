@@ -5,6 +5,7 @@ import * as styled from './styles.js';
 
 import Header from '../../components/Header';
 import Task from '../../components/Task';
+import InputTask from '../../components/InputTask';
 
 export const GET_PAGE = gql`
   query GET_PAGE {
@@ -73,7 +74,7 @@ function Home() {
         <div className="container">
           <Header header={dataPage.header} />
 
-          <div className="wrapper-tasks">
+          <main className="wrapper-tasks">
             {dataTasks.map(({ attributes: { task } }) => (
               <Task
                 className="task"
@@ -85,7 +86,9 @@ function Home() {
                 imageDelete={dataPage.image_task_delete.data.attributes}
               />
             ))}
-          </div>
+          </main>
+
+          <InputTask inputTask={dataPage.input_task} />
         </div>
       </styled.App>
     </div>

@@ -6,10 +6,13 @@ export const App = styled.div`
 
     .container {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .wrapper-tasks {
-      height: 75vh;
+      height: 78%;
 
       .task + .task {
         margin-top: 0.85em;
