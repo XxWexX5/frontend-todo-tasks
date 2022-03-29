@@ -23,6 +23,7 @@ export const ContainerTask = styled.div`
       padding: 0 3em;
       outline: 0;
       border-radius: 0.45em;
+      cursor: pointer;
     }
 
     .container-image-favorite {
@@ -33,6 +34,11 @@ export const ContainerTask = styled.div`
       top: 0;
       bottom: 0;
       margin: auto;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.75;
+      }
     }
 
     .container-image-delete {
@@ -43,6 +49,11 @@ export const ContainerTask = styled.div`
       top: 0;
       bottom: 0;
       margin: auto;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.75;
+      }
     }
 
     .check {

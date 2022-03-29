@@ -20,6 +20,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: Poppins, Arial, Helvetica, sans-serif;
     background-color: ${theme.colors.pink};
     padding: 5em 0;
+    height: 100vh;
+  }
+
+  #root,
+  .App {
+    height: 100%;
   }
 
   .container {
