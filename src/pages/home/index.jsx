@@ -7,6 +7,8 @@ import Header from '../../components/Header';
 import Task from '../../components/Task';
 import InputTask from '../../components/InputTask';
 
+import ImageLoading from '../../assets/images/loading.gif';
+
 export const GET_PAGE = gql`
   query GET_PAGE {
     pages {
@@ -65,7 +67,11 @@ function Home() {
   const { data, loading } = useQuery(GET_PAGE);
 
   if (loading) {
-    return <p>Carregando...</p>;
+    return (
+      <div className="container-loading">
+        <img src={ImageLoading} />
+      </div>
+    );
   }
 
   const dataPage = data.pages.data[0].attributes;

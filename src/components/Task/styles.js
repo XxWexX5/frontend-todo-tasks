@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import IconCheck from '../../assets/images/icon-check.svg';
+
 export const ContainerTask = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
@@ -70,7 +72,22 @@ export const ContainerTask = styled.div`
       transition: 0.35s opacity ease-in-out;
 
       &.checked {
-        background-color: ${theme.colors.gray};
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+          content: '';
+          background-image: url(${IconCheck});
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 1.35em;
+          height: 1em;
+          display: block;
+          margin-left: -0.1em;
+        }
       }
 
       &:hover {
