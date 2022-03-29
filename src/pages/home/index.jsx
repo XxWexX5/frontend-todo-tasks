@@ -21,6 +21,9 @@ export const GET_PAGE = gql`
               ...IMAGE
             }
           }
+          image_task_no_favorite {
+            ...IMAGE
+          }
           image_task_favorite {
             ...IMAGE
           }
@@ -75,14 +78,18 @@ function Home() {
           <Header header={dataPage.header} />
 
           <main className="wrapper-tasks">
-            {dataTasks.map(({ attributes: { task } }) => (
+            {dataTasks.map(({ id, attributes: { task } }) => (
               <Task
                 className="task"
-                key={task.id}
+                key={id}
+                id={id}
                 isChecked={task.is_checked}
                 isFavorited={task.is_favorited}
                 text={task.text}
                 imageFavorite={dataPage.image_task_favorite.data.attributes}
+                imageNoFavorite={
+                  dataPage.image_task_no_favorite.data.attributes
+                }
                 imageDelete={dataPage.image_task_delete.data.attributes}
               />
             ))}

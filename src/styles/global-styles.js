@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     background-color: ${theme.colors.pink};
-    padding: 5em 0;
+    padding: 6em;
     height: 100vh;
   }
 
