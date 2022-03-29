@@ -65,6 +65,7 @@ function Home() {
   }
 
   const dataPage = data.pages.data[0].attributes;
+  const dataTasks = data.todoTasks.data;
 
   return (
     <div className="App">
@@ -72,10 +73,19 @@ function Home() {
         <div className="container">
           <Header header={dataPage.header} />
 
-          <Task
-            imageFavorite={dataPage.image_task_favorite.data.attributes}
-            imageDelete={dataPage.image_task_delete.data.attributes}
-          />
+          <div className="wrapper-tasks">
+            {dataTasks.map(({ attributes: { task } }) => (
+              <Task
+                className="task"
+                key={task.id}
+                isChecked={task.is_checked}
+                isFavorited={task.is_favorited}
+                text={task.text}
+                imageFavorite={dataPage.image_task_favorite.data.attributes}
+                imageDelete={dataPage.image_task_delete.data.attributes}
+              />
+            ))}
+          </div>
         </div>
       </styled.App>
     </div>

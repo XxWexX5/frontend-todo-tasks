@@ -55,6 +55,16 @@ export const ContainerTask = styled.div`
       position: relative;
       z-index: 2;
       margin-left: 2em;
+      cursor: pointer;
+      transition: 0.35s opacity ease-in-out;
+
+      &.checked {
+        background-color: ${theme.colors.gray};
+      }
+
+      &:hover {
+        opacity: 0.75;
+      }
     }
   `};
 `;
