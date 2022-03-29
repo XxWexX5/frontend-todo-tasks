@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const ContainerHeader = styled.header`
   display: flex;
+  margin-bottom: 3em;
 
   .container-image {
     max-width: 4.35em;

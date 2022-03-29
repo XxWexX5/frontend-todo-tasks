@@ -4,7 +4,6 @@ import IconCheck from '../../assets/images/icon-check.svg';
 
 export const ContainerTask = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.white};
     border-radius: 0.45em;
     position: relative;
     height: 5.15em;

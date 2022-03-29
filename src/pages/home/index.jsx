@@ -81,25 +81,27 @@ function Home() {
     <div className="App">
       <styled.App>
         <div className="container">
-          <Header header={dataPage.header} />
+          <div className="wrapper">
+            <Header header={dataPage.header} />
 
-          <main className="wrapper-tasks">
-            {dataTasks.map(({ id, attributes: { task } }) => (
-              <Task
-                className="task"
-                key={id}
-                id={id}
-                isChecked={task.is_checked}
-                isFavorited={task.is_favorited}
-                text={task.text}
-                imageFavorite={dataPage.image_task_favorite.data.attributes}
-                imageNoFavorite={
-                  dataPage.image_task_no_favorite.data.attributes
-                }
-                imageDelete={dataPage.image_task_delete.data.attributes}
-              />
-            ))}
-          </main>
+            <main className="wrapper-tasks">
+              {dataTasks.map(({ id, attributes: { task } }) => (
+                <Task
+                  className="task"
+                  key={id}
+                  id={id}
+                  isChecked={task.is_checked}
+                  isFavorited={task.is_favorited}
+                  text={task.text}
+                  imageFavorite={dataPage.image_task_favorite.data.attributes}
+                  imageNoFavorite={
+                    dataPage.image_task_no_favorite.data.attributes
+                  }
+                  imageDelete={dataPage.image_task_delete.data.attributes}
+                />
+              ))}
+            </main>
+          </div>
 
           <InputTask inputTask={dataPage.input_task} />
         </div>

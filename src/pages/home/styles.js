@@ -12,7 +12,11 @@ export const App = styled.div`
     }
 
     .wrapper-tasks {
-      height: 78%;
+      height: 65%;
+      margin-bottom: 5em;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 5em;
 
       .task + .task {
         margin-top: 0.85em;
