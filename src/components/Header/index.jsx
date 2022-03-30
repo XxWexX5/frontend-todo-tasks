@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import ContainerHeader from './styles.js';
 
 import { returnAPI } from '../../utils/returnAPI';
@@ -18,6 +20,10 @@ const Header = ({ header }) => {
       <h2 className="title">{header.text_header}</h2>
     </ContainerHeader>
   );
+};
+
+Header.propTypes = {
+  header: PropTypes.object,
 };
 
 export default Header;

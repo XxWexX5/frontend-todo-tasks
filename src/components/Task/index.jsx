@@ -1,6 +1,8 @@
 import { gql, useMutation } from '@apollo/client';
 import React, { useState, useEffect } from 'react';
 
+import PropTypes from 'prop-types';
+
 import ContainerTask from './styles.js';
 
 import { returnAPI } from '../../utils/returnAPI';
@@ -133,6 +135,18 @@ const Task = ({
       />
     </ContainerTask>
   );
+};
+
+Task.propTypes = {
+  task: PropTypes.object,
+  imageFavorite: PropTypes.object,
+  imageNoFavorite: PropTypes.object,
+  imageDelete: PropTypes.object,
+  isChecked: PropTypes.bool,
+  isFavorited: PropTypes.bool,
+  text: PropTypes.string,
+  className: PropTypes.string,
+  id: PropTypes.number,
 };
 
 export default Task;

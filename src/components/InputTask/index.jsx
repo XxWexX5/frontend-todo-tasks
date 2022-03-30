@@ -1,6 +1,8 @@
 import { gql, useMutation } from '@apollo/client';
 import React, { useState } from 'react';
 
+import PropTypes from 'prop-types';
+
 import ContainerInputTask from './styles';
 
 import { GET_PAGE } from '../../pages/home';
@@ -57,6 +59,10 @@ const InputTask = ({ inputTask }) => {
       />
     </ContainerInputTask>
   );
+};
+
+InputTask.propTypes = {
+  inputTask: PropTypes.object,
 };
 
 export default InputTask;
