@@ -75,7 +75,7 @@ function Home() {
     );
   }
 
-  if (error) {
+  if (error && !data) {
     return (
       <div className="container-404">
         <img src={Image404} />

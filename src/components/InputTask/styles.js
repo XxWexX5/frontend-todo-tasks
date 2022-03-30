@@ -1,24 +1,24 @@
 import styled, { css } from 'styled-components';
 
+import IconPlus from '../../assets/images/plus.svg';
+
 export const ContainerInputTask = styled.footer`
   ${({ theme }) => css`
     position: relative;
 
-    &:before,
-    &:after {
+    &:before {
       content: '';
       width: 18px;
-      height: 1px;
+      height: auto;
       position: absolute;
       top: 0;
-      left: 1.65em;
+      left: 1.95em;
       bottom: 0;
       margin: auto;
-      background: ${theme.colors.gray};
-    }
-
-    &:after {
-      transform: rotate(90deg);
+      background-image: url(${IconPlus});
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     .input-task {
