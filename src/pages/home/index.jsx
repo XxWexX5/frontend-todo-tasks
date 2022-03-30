@@ -8,6 +8,7 @@ import Task from '../../components/Task';
 import InputTask from '../../components/InputTask';
 
 import ImageLoading from '../../assets/images/loading.gif';
+import Image404 from '../../assets/images/404.gif';
 
 export const GET_PAGE = gql`
   query GET_PAGE {
@@ -64,12 +65,20 @@ export const GET_PAGE = gql`
 `;
 
 function Home() {
-  const { data, loading } = useQuery(GET_PAGE);
+  const { data, loading, error } = useQuery(GET_PAGE);
 
   if (loading) {
     return (
       <div className="container-loading">
         <img src={ImageLoading} />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container-404">
+        <img src={Image404} />
       </div>
     );
   }

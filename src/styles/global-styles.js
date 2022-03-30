@@ -67,6 +67,27 @@ const GlobalStyles = createGlobalStyle`
       left: 0;
     }
   }
+
+  .container-404 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #14A983;
+
+    img {
+      width: 50em;
+      height: auto;
+      object-fit: cover;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
 `;
 
 export default GlobalStyles;
