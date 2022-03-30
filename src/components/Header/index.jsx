@@ -2,18 +2,20 @@ import React from 'react';
 
 import ContainerHeader from './styles.js';
 
-const Header = (props) => {
+import { returnAPI } from '../../utils/returnAPI';
+
+const Header = ({ header }) => {
   return (
     <ContainerHeader>
       <div className="container-image">
         <img
-          src={'http://localhost:1337' + props.header.image.data.attributes.url}
-          alt={props.header.image.data.attributes.alt}
+          src={`${returnAPI()}${header.image.data.attributes.url}`}
+          alt={header.image.data.attributes.alt}
           className=""
         />
       </div>
 
-      <h2 className="title">{props.header.text_header}</h2>
+      <h2 className="title">{header.text_header}</h2>
     </ContainerHeader>
   );
 };

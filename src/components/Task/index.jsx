@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 
 import ContainerTask from './styles.js';
 
+import { returnAPI } from '../../utils/returnAPI';
+
 import { GET_PAGE } from '../../pages/home';
 
 const DELETE_TASK = gql`
@@ -103,13 +105,13 @@ const Task = ({
       >
         {changeFavorited ? (
           <img
-            src={'http://localhost:1337' + imageFavorite.url}
-            alt={'http://localhost:1337' + imageFavorite.alt}
+            src={`${returnAPI()}${imageFavorite.url}`}
+            alt={`${returnAPI()}${imageFavorite.alt}`}
           />
         ) : (
           <img
-            src={'http://localhost:1337' + imageNoFavorite.url}
-            alt={'http://localhost:1337' + imageNoFavorite.alt}
+            src={`${returnAPI()}${imageNoFavorite.url}`}
+            alt={`${returnAPI()}${imageNoFavorite.alt}`}
           />
         )}
       </div>
@@ -119,8 +121,8 @@ const Task = ({
         onClick={handleDeleteTask}
       >
         <img
-          src={'http://localhost:1337' + imageDelete.url}
-          alt={'http://localhost:1337' + imageDelete.alt}
+          src={`${returnAPI()}${imageDelete.url}`}
+          alt={`${returnAPI()}${imageDelete.alt}`}
         />
       </div>
 
