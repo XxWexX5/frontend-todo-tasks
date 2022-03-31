@@ -1,5 +1,5 @@
-![React](https://www.svgrepo.com/show/354259/react.svg =200x200)
-![GraphQL](https://bognarjunior.files.wordpress.com/2019/08/logo.png?w=400 =200x200)
+![React](https://www.svgrepo.com/show/354259/react.svg=200x200)
+![GraphQL](https://bognarjunior.files.wordpress.com/2019/08/logo.png?w=400=200x200)
 
 # FrontEnd Todo Task by Wevison R.
 Never forget your next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
