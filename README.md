@@ -1,4 +1,4 @@
-[url=https://postimages.org/][img]https://i.postimg.cc/9rwbPspT/graphQL.png[/img][/url] [url=https://postimages.org/][img]https://i.postimg.cc/Wt3Xzdq5/react.png[/img][/url] [url=https://postimages.org/][img]https://i.postimg.cc/DmM5X7qn/strapi.png[/img][/url]
+[url=https://postimages.org/][img]https://i.postimg.cc/sDwLzrGn/graphQL.png[/img][/url] [url=https://postimages.org/][img]https://i.postimg.cc/jq698NxY/react.png[/img][/url] [url=https://postimages.org/][img]https://i.postimg.cc/MKWLgTHM/strapi.png[/img][/url]
 
 # FrontEnd Todo Task by Wevison R.
 Never forget your next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
