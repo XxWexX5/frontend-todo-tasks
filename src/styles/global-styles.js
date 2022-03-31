@@ -88,6 +88,10 @@ const GlobalStyles = createGlobalStyle`
       left: 0;
     }
   }
+
+  iframe {
+    display: none;
+  }
 `;
 
 export default GlobalStyles;
