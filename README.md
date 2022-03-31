@@ -1,4 +1,4 @@
-[![graphQL.png](https://i.postimg.cc/25p7RcGc/graphQL.png)](https://postimg.cc/jDX7yhGP) [![react.png](https://i.postimg.cc/G2dP94Zv/react.png)](https://postimg.cc/bGVSBwYv) [![strapi.png](https://i.postimg.cc/QtmQ7X3w/strapi.png)](https://postimg.cc/DJW4k3mP)
+[![graphQL.png](https://i.postimg.cc/zf5HF90r/graphQL.png)](https://postimg.cc/nXRLHSyR)  [![react.png](https://i.postimg.cc/BvgLYMV1/react.png)](https://postimg.cc/v14ZDLMQ)  [![strapi.png](https://i.postimg.cc/PxVLhNhX/strapi.png)](https://postimg.cc/vg98tYck)
 
 # FrontEnd Todo Task by Wevison R.
 Never forget your next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
