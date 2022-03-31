@@ -1,5 +1,6 @@
-![React](https://drive.google.com/file/d/1UWA3wqZVnnrAyhG6KAyapuf3me5jvCzL/view?usp=sharing)
-![GraphQL](https://bognarjunior.files.wordpress.com/2019/08/logo.png?w=400)
+[Imgur](https://imgur.com/6SGrZVs)
+[Imgur](https://imgur.com/3hW3jDD)
+[Imgur](https://imgur.com/MitgDnG)
 
 # FrontEnd Todo Task by Wevison R.
 Never forget your next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
