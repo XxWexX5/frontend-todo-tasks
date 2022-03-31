@@ -1,5 +1,5 @@
 # FrontEnd Todo Task by Wevison R.
-Never forget you next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
+Never forget your next task anymore! (っ ͡❛ ͜ʖ ͡❛)っ
 
 ## Layout
 ![layout](https://www.imagemhost.com.br/images/2022/03/31/layout.jpg)
