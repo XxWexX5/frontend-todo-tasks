@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 
 import ContainerTask from './styles.js';
 
+import ImageDelete from '../../assets/images/icon-delete.svg';
+import ImageFavorite from '../../assets/images/icon-favorite.svg';
+import ImageNoFavorite from '../../assets/images/icon-no-favorite.svg';
+
 import { returnAPI } from '../../utils/returnAPI';
 
 import { GET_PAGE } from '../../pages/home';
@@ -106,15 +110,9 @@ const Task = ({
         }
       >
         {changeFavorited ? (
-          <img
-            src={`${returnAPI()}${imageFavorite.url}`}
-            alt={`${returnAPI()}${imageFavorite.alt}`}
-          />
+          <img src={ImageFavorite} alt="Ícone de favorito." />
         ) : (
-          <img
-            src={`${returnAPI()}${imageNoFavorite.url}`}
-            alt={`${returnAPI()}${imageNoFavorite.alt}`}
-          />
+          <img src={ImageNoFavorite} alt="Ícone de não favorito." />
         )}
       </div>
 
@@ -122,10 +120,7 @@ const Task = ({
         className="container-image container-image-delete"
         onClick={handleDeleteTask}
       >
-        <img
-          src={`${returnAPI()}${imageDelete.url}`}
-          alt={`${returnAPI()}${imageDelete.alt}`}
-        />
+        <img src={ImageDelete} alt="Ícone de delete." />
       </div>
 
       <input

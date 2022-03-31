@@ -4,17 +4,15 @@ import PropTypes from 'prop-types';
 
 import ContainerHeader from './styles.js';
 
+import ImageCalendar from '../../assets/images/icon-calendar.svg';
+
 import { returnAPI } from '../../utils/returnAPI';
 
 const Header = ({ header }) => {
   return (
     <ContainerHeader>
       <div className="container-image">
-        <img
-          src={`${returnAPI()}${header.image.data.attributes.url}`}
-          alt={header.image.data.attributes.alt}
-          className=""
-        />
+        <img src={ImageCalendar} alt="Ícone de calendário." className="" />
       </div>
 
       <h2 className="title">{header.text_header}</h2>
