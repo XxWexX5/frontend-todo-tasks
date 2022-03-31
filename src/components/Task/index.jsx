@@ -53,16 +53,7 @@ const UPDATE_TASK = gql`
   }
 `;
 
-const Task = ({
-  imageFavorite,
-  imageNoFavorite,
-  imageDelete,
-  isChecked,
-  isFavorited,
-  text,
-  className,
-  id,
-}) => {
+const Task = ({ isChecked, isFavorited, text, className, id }) => {
   const [deleteTask, { dataDelete }] = useMutation(DELETE_TASK);
   const [updateTask, { dataUpdate }] = useMutation(UPDATE_TASK);
   const [changeChecked, setChangeChecked] = useState(isChecked);
@@ -134,14 +125,11 @@ const Task = ({
 
 Task.propTypes = {
   task: PropTypes.object,
-  imageFavorite: PropTypes.object,
-  imageNoFavorite: PropTypes.object,
-  imageDelete: PropTypes.object,
   isChecked: PropTypes.bool,
   isFavorited: PropTypes.bool,
   text: PropTypes.string,
   className: PropTypes.string,
-  id: PropTypes.number,
+  id: PropTypes.string,
 };
 
 export default Task;

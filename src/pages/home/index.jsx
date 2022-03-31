@@ -102,11 +102,6 @@ function Home() {
                   isChecked={task.is_checked}
                   isFavorited={task.is_favorited}
                   text={task.text}
-                  imageFavorite={dataPage.image_task_favorite.data.attributes}
-                  imageNoFavorite={
-                    dataPage.image_task_no_favorite.data.attributes
-                  }
-                  imageDelete={dataPage.image_task_delete.data.attributes}
                 />
               ))}
             </main>
