@@ -5,10 +5,6 @@ import PropTypes from 'prop-types';
 
 import ContainerTask from './styles.js';
 
-import ImageDelete from '../../assets/images/icon-delete.svg';
-import ImageFavorite from '../../assets/images/icon-favorite.svg';
-import ImageNoFavorite from '../../assets/images/icon-no-favorite.svg';
-
 import { returnAPI } from '../../utils/returnAPI';
 
 import { GET_PAGE } from '../../pages/home';
@@ -53,7 +49,16 @@ const UPDATE_TASK = gql`
   }
 `;
 
-const Task = ({ isChecked, isFavorited, text, className, id }) => {
+const Task = ({
+  isChecked,
+  isFavorited,
+  text,
+  className,
+  imageFavorite,
+  imageNoFavorite,
+  imageDelete,
+  id,
+}) => {
   const [deleteTask, { dataDelete }] = useMutation(DELETE_TASK);
   const [updateTask, { dataUpdate }] = useMutation(UPDATE_TASK);
   const [changeChecked, setChangeChecked] = useState(isChecked);
@@ -101,9 +106,9 @@ const Task = ({ isChecked, isFavorited, text, className, id }) => {
         }
       >
         {changeFavorited ? (
-          <img src={ImageFavorite} alt="Ícone de favorito." />
+          <img src={`${imageFavorite.url}`} alt={`${imageFavorite.alt}`} />
         ) : (
-          <img src={ImageNoFavorite} alt="Ícone de não favorito." />
+          <img src={`${imageNoFavorite.url}`} alt={`${imageNoFavorite.alt}`} />
         )}
       </div>
 
@@ -111,7 +116,7 @@ const Task = ({ isChecked, isFavorited, text, className, id }) => {
         className="container-image container-image-delete"
         onClick={handleDeleteTask}
       >
-        <img src={ImageDelete} alt="Ícone de delete." />
+        <img src={`${imageDelete.url}`} alt={`${imageDelete.alt}`} />
       </div>
 
       <input
@@ -130,6 +135,9 @@ Task.propTypes = {
   text: PropTypes.string,
   className: PropTypes.string,
   id: PropTypes.string,
+  imageFavorite: PropTypes.object,
+  imageNoFavorite: PropTypes.object,
+  imageDelete: PropTypes.object,
 };
 
 export default Task;
